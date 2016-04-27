@@ -1,5 +1,5 @@
 /*
-  first of all, the shortened url points to:
+  first of all, the url is:
     http://foundationphp.com/phpclinic/podata.php?startDate=20150301&endDate=20150302&raw
 
   now, if you remove '&raw' from the end, your task is already completed because then the server returns the mean & median of
@@ -10,7 +10,7 @@
 */
 
 var request = require ('request'),
-  url = 'http://goo.gl/8VbcRr',   //uri for json object
+  url = 'http://foundationphp.com/phpclinic/podata.php?startDate=20150301&endDate=20150302&raw',   //uri for json object
   data;
 
 data = request (url, function (err, response, body) {
